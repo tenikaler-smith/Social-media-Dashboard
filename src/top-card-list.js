@@ -1,24 +1,14 @@
 import React from 'react';
+import Card from './card'
+import './top-card-list.css'
 
 function TopCardList(){
     return(
         <section className="top-cards">
             <div className="wrapper">
                 <div className="grid">
-                    <article className="card facebook">
-                        <p className="card-title">
-                            <img src="#" alt="#" />
-                            @tenikalerSmith
-                        </p>
-                        <p className="card-followers">
-                            <span className="card-follwers-number">12323</span>
-                            <span className="card-followers-title">Followers</span>
-                        </p>
-                        <p className="card-body">
-                            <img src="#" alt="#" />
-                            12 Today
-                        </p>
-                    </article>
+                    <Card />
+
                     <article className="card twitter">
                         <p className="card-title">
                             <img src="#" alt="#" />
@@ -50,7 +40,6 @@ function TopCardList(){
                 </div>
             </div>
         </section>
-        
     );
 }
 
