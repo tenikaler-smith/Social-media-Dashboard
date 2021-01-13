@@ -16,6 +16,8 @@ body {
   --instagram-1: hsl(37, 97%, 70%);
   --instagram-2: hsl(329, 70%, 58%);
   --youTube: hsl(348, 97%, 39%);
+  --linkedin: hsl(201, 100%, 34%);
+  --github: #5f616d;
   --gray: #5f616d;
   --cardGray: #f0f3fa;
   --lightGray: #f8f9fe;
@@ -32,11 +34,30 @@ body {
   display: grid;
   grid-row-gap: 25px;
 }
+
+@media screen and (min-width: 480px) {
+  .grid {
+    /* border: 1px solid purple; */
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+  }
+  .wrapper {
+    max-width: 1440px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .dark-mode {
   display: flex;
   justify-content: space-between;
   padding-top: 1em;
-}
+ }
 .checkbox {
   display: none;
 }

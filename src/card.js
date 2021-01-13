@@ -1,20 +1,21 @@
 import React from 'react';
 import './card.css'
 
-function Card() {
+function Card({name, userName, icon, followers, todayFollowers, iconToday}) {
+  const cardClass = `card ${name}`
   return (
-    <article className="card facebook">
+    <article className={cardClass}>
       <p className="card-title">
-        <img src="#" alt="#" />
-        @tenikalerSmith
+        <img src={icon} alt="#" />
+        {userName}
       </p>
       <p className="card-followers">
-        <span className="card-follwers-number"> 12323 </span>
+        <span className="card-follwers-number">{followers}</span>
         <span className="card-followers-title"> Followers </span>
       </p>
-      <p className="card-body">
-        <img src="#" alt="#" />
-        12 Today
+      <p className="card-today">
+        <img src={iconToday} alt="#" />
+        {todayFollowers} Today
       </p>
     </article>
   );

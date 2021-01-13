@@ -28,6 +28,12 @@
   .card.youtube::before {
     background: var(--youTube);
   }
+  .card.linkedin::before {
+    background: var(--linkedin);
+  }
+  .card.github::before {
+    background: var(--github);
+  }
 
   .card-title {
     display: flex;
@@ -41,9 +47,9 @@
     margin-right: 5px;
   }
 
-  .card-followers {
-    /* border: 1px solid green; */
-  }
+  /* .card-followers {
+    border: 1px solid green;
+  } */
 
   .card-followers-number {
     /* border: 1px solid red; */
