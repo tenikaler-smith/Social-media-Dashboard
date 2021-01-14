@@ -74,7 +74,7 @@ h2 {
 
 
 
-
+/* 
 
 .dark-mode {
   display: flex;
@@ -122,4 +122,4 @@ h2 {
     --switchSpinner: #282943;
     --switch: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
   }
-}
+} */
