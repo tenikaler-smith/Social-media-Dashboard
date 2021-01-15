@@ -3,7 +3,7 @@ import Card from './card'
 import './top-card-list.css'
 
 const cardListData = [
-    {
+    { 
         id:1,
         name: 'facebook',
         userName: '@tenikaler_Smith',

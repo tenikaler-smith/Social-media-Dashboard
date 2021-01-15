@@ -17,7 +17,7 @@ body {
   --instagram-2: hsl(329, 70%, 58%);
   --youTube: hsl(348, 97%, 39%);
   --linkedin: hsl(201, 100%, 34%);
-  --github: #5f616d;
+  --github: hsl(228, 3%, 39%);
   --gray: #5f616d;
   --cardGray: #f0f3fa;
   --lightGray: #f8f9fe;
@@ -70,24 +70,17 @@ h2 {
   }
 }
 
-
-
-
-
-/* 
-
 .dark-mode {
   display: flex;
   justify-content: space-between;
   padding-top: 1em;
- }
+}
 .checkbox {
   display: none;
 }
 .checkbox:checked ~ .switch:before{
   transform: translateX(0);
 }
-
 
 .is-dark-mode {
   --cardGray: #252b43;
@@ -122,4 +115,4 @@ h2 {
     --switchSpinner: #282943;
     --switch: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
   }
-} */
+}

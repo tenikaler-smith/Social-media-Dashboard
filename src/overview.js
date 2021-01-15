@@ -1,6 +1,6 @@
 import React from 'react';
-import CardSmall from './card-small.js'
-import Card from './card.js';
+import CardSmall from './card-small'
+//* import Card from './card.js';
 import "./overview.css"
 
 const cardSmallList=[
@@ -48,24 +48,21 @@ export default function Overview() {
             <div className="wrapper">
                 <h2> Overview - Today </h2>
                 <div className="grid" >
-
                 {
-                    cardSmallList.map((cardSmallData) =>
-                    <CardSmall key={cardSmallData.key} {...cardSmallData}  />)
-                }
-
-                {/*
-                otra alternativa
-                cardSmallList.mao(({icon, pageViews, growth, key}) =>
+                //*? otra alternativa
+                cardSmallList.map(({icon, pageViews, growth, key}) =>
                     <CardSmall
                         icon={icon}
                         key={key}
                         pageViews = {pageViews}
                         growth={growth}
                     />
-                    )
                 )
-                */}
+                }
+                {/* {
+                    cardSmallList.map((cardSmallData) =>
+                    <CardSmall key={cardSmallData.key} {...cardSmallData} />)
+                } */}
                 </div>
             </div>
         </section>
