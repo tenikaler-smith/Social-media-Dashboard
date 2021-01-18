@@ -3,7 +3,7 @@ import Card from './card'
 import './top-card-list.css'
 
 const cardListData = [
-    { 
+    {
         id:1,
         name: 'facebook',
         userName: '@tenikaler_Smith',
@@ -65,11 +65,10 @@ function TopCardList(){
         <section className="top-cards">
             <div className="wrapper">
                 <div className="grid">
-
                 {
-                    cardListData.map ((cardData) =>
-                    <Card key={cardData.id} {...cardData}
-                    />)
+                cardListData.map ((cardData) =>
+                <Card key={cardData.id} {...cardData}
+                />)
                 }
 
                     {/* <article className="card twitter">

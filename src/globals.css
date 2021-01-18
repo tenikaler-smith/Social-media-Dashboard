@@ -78,10 +78,6 @@ h2 {
 .checkbox {
   display: none;
 }
-.checkbox:checked ~ .switch:before{
-  transform: translateX(0);
-}
-
 .is-dark-mode {
   --cardGray: #252b43;
   --baseBackground: #1d2029;

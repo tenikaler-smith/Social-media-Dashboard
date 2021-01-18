@@ -56,13 +56,13 @@ export default function Overview() {
                         key={key}
                         pageViews = {pageViews}
                         growth={growth}
-                    />
-                )
+                    />)
                 }
-                {/* {
-                    cardSmallList.map((cardSmallData) =>
-                    <CardSmall key={cardSmallData.key} {...cardSmallData} />)
-                } */}
+
+                    {/* {
+                        cardSmallList.map((cardSmallData) =>
+                        <CardSmall key={cardSmallData.key} {...cardSmallData} />)
+                    } */}
                 </div>
             </div>
         </section>
